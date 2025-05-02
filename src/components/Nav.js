@@ -1,31 +1,32 @@
 import "../App.css";
 import Logo from "../assets/Logo.svg";
+import { Link } from "react-router-dom";
 function Nav() {
   return (
-    <div  className="navigation">
+    <div className="navigation">
       <img
         src={Logo}
         alt="Little Lemon Logo"
-        style={{ width: "100px", height: "100px", }}
+        style={{ width: "100px", height: "100px" }}
       />
-      <ul  className="navigation">
+      <ul className="navigation">
         <li>
-          <a href="/Home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/About">About</a>
+          <Link to="/About">About</Link>
         </li>
         <li>
-          <a href="/Menu">Menu</a>
+          <Link to="/Menu">Menu</Link>
         </li>
         <li>
-          <a href="/Reservations">Reservations</a>
+          <Link to="/Reservations">Reservations</Link>
         </li>
         <li>
-          <a href="/orderOnline">Order Online</a>
+          <Link to="/orderOnline">Order Online</Link>
         </li>
         <li>
-          <a href="/Login">Login</a>
+          <Link to="/Login">Login</Link>
         </li>
       </ul>
     </div>

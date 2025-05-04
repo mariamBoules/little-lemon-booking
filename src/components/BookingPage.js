@@ -1,10 +1,9 @@
 import "../App.css";
+import BookingForm from "./BookingForm";
 
-function BookingPage() {
+function BookingPage(props) {
   return (
-    <div className="banner">
-      <h1>BookingPage</h1>
-    </div>
+    <BookingForm availableTimes = {props.availableTimes} submitForm = {props.submitForm}/>
   );
 }
 

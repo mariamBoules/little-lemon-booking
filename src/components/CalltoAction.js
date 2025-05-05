@@ -10,7 +10,7 @@ function CalltoAction() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button className="yellowbutton">Reserve a table</button>
+        <button className="yellowbutton" aria-label="On Click">Reserve a table</button>
       </div>
 
       <img

@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 import Food from "../assets/restauranfood.jpg";
 function HomePage() {
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate("/booking")
+  };
   return (
     <div className="banner">
       <div>
@@ -10,7 +16,7 @@ function HomePage() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <button className="yellowbutton">Reserve a table</button>
+        <button className="yellowbutton" onClick={handleClick}>Reserve a table</button>
       </div>
 
       <img
